@@ -1,0 +1,77 @@
+﻿@page "/sfbsfbb"
+
+<PageTitle>Home</PageTitle>
+
+@*Pjesa e stilizimit*@
+<style>
+.accountingDiv{
+    height:100vh;
+    width:100%;
+    background-color: rgb(249, 245, 236);
+}
+.headerDiv{
+    background-color:maroon;
+    color:white;
+    height:9vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.headerDiv h4{
+    cursor: pointer;
+    transition:color 0.3s ease-in-out;
+}
+.headerDiv h4:hover, .headerDiv h4.focus{
+    color:rgb(255, 200, 200)
+}
+
+    .contentDiv {
+        display: flex;
+        flex-wrap: wrap;
+        width: 98%;
+        padding: 2%;
+    }
+
+    .balanceDiv {
+        width: 30vw;
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 15px;
+    }
+
+    .transactionsDiv {
+        width: 60vw;
+        height: 25vh;
+        margin-left: 2%;
+        border: 1px solid black;
+        border-radius: 15px;
+    }
+</style>
+
+
+@* Pjesa e elementeve*@
+<div class='accountingDiv'>
+    <div class='headerDiv'>
+        <h4>TEST</h4>
+        <h4>TEST</h4>
+        <h4>TEST</h4>
+        <h4>TEST</h4>
+    </div>
+    <div class='contentDiv'>
+        <div class='balanceDiv'>
+            <h1>Your balance:</h1>
+            <h1>200.00$</h1>
+        </div>
+        <div class='transactionsDiv'>
+            <ul>
+                <li>+100.00$ - Card transfer from Edi Krasniqi</li>
+                <li>-55.00$  - Card purchase at Rr.123 Street, Prishtina</li>
+            </ul>
+        </div>
+    </div>
+</div>
